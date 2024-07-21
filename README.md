@@ -1,1 +1,362 @@
-# test999
+
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrazowy site</title>
+    <link rel="stylesheet" href="my.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab-button" onclick="openTab(event, 'tab1')">
+        Administrowanie sieciowymi systemami operacyjnymi
+      </button>
+      <button class="tab-button" onclick="openTab(event, 'tab2')">
+        Urzadzenia techniki komputerowej
+      </button>
+      <button class="tab-button" onclick="openTab(event, 'tab3')">
+        Kwalifikacja INF.03 Tworzenie i administrowanie stronami i aplikacijami
+        internetowymi oraz bazami danych
+      </button>
+      <button class="tab-button" onclick="openTab(event, 'tab4')">JavaScript. Подробное руководство</button>
+      <button class="tab-button" onclick="openTab(event, 'tab5')">Modern JavaScript for the Impatient</button>
+    </div>
+  
+
+
+      <div id="tab1" class="tab-content">
+      <!-- Добавляйте контент для первой вкладки здесь -->
+      <div class="content-item">
+        <h2>Konfigurowanie interfejsu sieciowego</h2>
+        <p class="polish">
+          Skonfigurowanie interfejsu sieciowego w systemie Linux Funkcja pakietu
+          narzędzi iproute2 Skonfigurowanie interfejsu sieciowego za pomocą
+          narzędzia ip Skonfigurowanie interfejsu sieciowego w środowisku
+          graficznym Narzędzia umożliwiające odwzorowanie nazw na adresy IP
+          Wpisy zawarte w przykładowym pliku /etc/hosts Metody testowania
+          połączenia sieciowego w systemie Linux Polecenie ping i sposoby
+          korzystania z niego Polecenie traceroute i sposoby korzystania z niego
+          Zabezpieczenie komputera przed dostępem osób nieuprawnionych Dostęp do
+          serwera dla wybranego komputera w sieci Linux jest systemem
+          operacyjnym zawierającym wszystkie składniki niezbędne do przyłączenia
+          do internetu lub zbudowania sieci lokalnej. Ze względu na stabilność
+          działania i dużą wydajność często używa się go jako systemu
+          operacyjnego serwerów w internecie. W dystrybucjach umieszcza się
+          wstępnie skonfigurowane serwery umożliwiające świadczenie usług,
+          takich jak udostępnianie stron WWW, FTP, poczty elektronicznej i wielu
+          innych. Korzystanie z sieci w systemie Linux jest możliwe po
+          wcześniejszym skonfigurowaniu ustawień dla interfejsu sieciowego.
+          Interfejs Ethernet w Linuksie składa się z karty sieciowej i programu
+          obsługi. Elementem sprzętowym jest karta sieciowa. Oprogramowanie
+          interfejsu Ethernet to program obsługi używany przez jądro systemu. W
+          celu wyświetlenia informacji o nazwach i konfiguracji interfejsów
+          sieciowych można użyć polecenia ip addr show (rys. 1.1).
+        </p>
+        <h3>Конфигурирование сетевого интерфейса</h3>
+        <p class="russian">
+          Конфигурирование сетевого интерфейса в системе Linux Функция пакета
+          инструментов iproute2 Конфигурирование сетевого интерфейса с помощью
+          инструмента ip Конфигурирование сетевого интерфейса в графической
+          среде Инструменты для сопоставления имен IP-адресам Записи,
+          содержащиеся в примере файла /etc/hosts Методы тестирования сетевого
+          соединения в системе Linux Команда ping и способы ее использования
+          Команда traceroute и способы ее использования Защита компьютера от
+          несанкционированного доступа Доступ к серверу для выбранного
+          компьютера в сети Linux - это операционная система, содержащая все
+          компоненты, необходимые для подключения к интернету или создания
+          локальной сети. Благодаря стабильности работы и высокой
+          производительности она часто используется в качестве операционной
+          системы серверов в интернете. В дистрибутивах содержатся
+          предварительно сконфигурированные серверы, позволяющие предоставлять
+          услуги, такие как размещение веб-страниц, FTP, электронная почта и
+          многие другие. Использование сети в системе Linux возможно после
+          предварительной настройки параметров для сетевого интерфейса.
+          Ethernet-интерфейс в Linux состоит из сетевой карты и драйвера.
+          Аппаратной частью является сетевая карта. Программное обеспечение
+          Ethernet-интерфейса - это драйвер, используемый ядром системы. Для
+          отображения информации о названиях и конфигурации сетевых интерфейсов
+          можно использовать команду ip addr show (рис. 1.1).
+        </p>
+        <img src="image1.jpg" alt="image1" />
+      </div>
+
+      <!-- Новый добавленный контент -->
+      <div class="content-item">
+        <h2>Rys. 1.2. Plik konfiguracyjny sieci z opisem interfejsu</h2>
+        <p class="polish">W pliku zdefiniowano konfigurację interfejsu sieciowego enp0s3 - konfigurowanego statycz- nie. Dla każdego interfejsu sieciowego istnieje sekcja w pliku, w którym są przechowywane ustawienia konfiguracyjne, np. dla interfejsu enp0s3:</p>
+        <h3>
+          ⚫️ dhcp4: no   -   nie będzie wykorzystywany serwer DHCP;</h3>
+          <h3>⚫️ addresses: [10.1.51.21/8] - adres IP i maska (można wprowadzić kilka adresów oddzielonych przecinkiem);</h3>
+          <h3>⚫️ gateway4: 10.1.1.1   -   adres bramy sieciowej;</h3>
+          <h3>⚫️ nameservers: addresses: [8.8.8.8, 8.8.4.4]   -    adresy serwerów DNS.</h3>
+          <h3>UWAGA
+
+            Wcięcia w pliku konfiguracyjnym należy wykonać za pomocą spacji.</h3>
+            <h3>Po wprowadzeniu zmian w plikach konfiguracyjnych należy sprawdzić poprawność konfigu- racji i ponownie uruchomić interfejsy za pomocą poleceń:</h3>
+            <h2>sudo netplan try</h2>
+            <h2>sudo netplan apply</h2>
+          <p class="polish"></p>
+        <h3>Рис. 1.2. Файл конфигурации сети с описанием интерфейса</h3>
+        <h3></h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+       <!-- Новый добавленный контент -->
+       <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+      <!-- Добавляйте контент для второй вкладки здесь -->
+      <div class="content-item">
+        <h2>
+          Podstawowe elementy elektroniczne stosowane w urządzeniach techniki
+          komputerowej
+        </h2>
+        <p class="polish">
+          Elementy elektroniczne. Wykonuje się je z różnych materiałów i według
+          różnych technologii, dlatego mają rózne właści wości i zastosowania. W
+          układach elektronicznych występują ⚫ elementy bierne rezystory.
+          kondensatory, cewki: transformatory:⚫ elementy czynne: diody:
+          tranzystory, układy scalone. Rezystor Rezystor (potocznie: opornik)
+          jest elementem biernym obwodu elektrycznego. Zależnie od cha
+          rakterystyki prądowo-napięciowej wyróżnia się rezystory liniowe (gdy
+          prąd płynący przez taki rezystor jest wprost proporcjonalny do
+          występującego na nim spadku napięcia) i nieliniowe. Rezystory służą do
+          ograniczania prądu płynącego w określonych gałęziach obwodu i do usta
+          lania odpowiednich spadków napięcia. Prąd przepływający przez te
+          elementy powoduje wydzie lanie się ciepła. Rezystory mają różne
+          wymiary i kształty. Wytwarza się je z różnych materiałów. Symbol
+          rezystora stosowany na schemacie przedstawiono na rys. 12.1a.
+          Parametrem rezystora jest rezystancja (oznaczana literą R), którą
+          wyraża się w omach (0), np. 10 kl.
+        </p>
+        <h3>
+          Основные электронные компоненты, используемые в устройствах
+          компьютерной техники
+        </h3>
+        <p class="russian">
+          Электронные компоненты. Они изготавливаются из разных материалов и по
+          разным технологиям, поэтому имеют разные свойства и применение.
+          Электронные системы содержат: ⚫ пассивные элементы: резисторы;
+          конденсаторы: катушки; трансформаторы; ⚫ активные элементы: диоды:
+          транзисторы; интегральные схемы. Резистор Резистор (в просторечии:
+          резистор) — пассивный элемент электрической цепи. В зависимости от
+          вольт-амперных характеристик различают резисторы линейные (когда ток,
+          протекающий через такой резистор, прямо пропорционален падению
+          напряжения, происходящему на нем) и резисторы нелинейные. Резисторы
+          используются для ограничения тока, протекающего в определенных ветвях
+          цепи, и для установки достижение соответствующего падения напряжения.
+          Ток, протекающий через эти элементы, производит тепло. Резисторы
+          бывают разных размеров и форм. Они изготовлены из различных
+          материалов. Используемое на схеме обозначение резистора показано на
+          рис. 12.13. Параметр резистора – сопротивление (обозначается буквой
+          R), которое выражается в Омах.
+        </p>
+        <img src="image2.jpg" alt="image2" />
+        <img src="image3.jpg" alt="image2" />
+      </div>
+      <!-- Новый добавленный контент -->
+      <div class="content-item">
+        <h2>PODSTAWOWE POJĘCIA Z ZAKRESU INFORMATYKI I ELEKTROTECHNIKI</h2>
+        <p class="polish">Łączenie rezystorów:
+
+          Jeżeli potrzebujemy rezystora 10 ko, możemy połą- czyć szeregowo dwa rezystory po 5 ΚΩ.
+
+
+          Potencjometr:
+
+          Jest to regulowany rezystor. Ma on trzy wyprowa- dzenia: dwa z nich są połączone ze ścieżką o sta- łym oporze, a trzeci z regulowanym ślizgaczem. Działają na zasadzie zmiany prądu lub napięcia dostarczanego do urządzenia elektrycznego. Im większa rezystancja, tym napięcie lub prąd ma- leje. Na tej zasadzie działają potencjometry głosu w głośnikach, radiach itp. Potencjometrem można również regulować jasność, np. diody lub żarówki.</p>
+        <h3>ОСНОВНЫЕ ПОНЯТИЯ В ОБЛАСТИ ИНФОРМАТИКИ И ЭЛЕКТРОТЕХНОЛОГИЙ</h3>
+        <p class="russian">Подключение резисторов:
+
+          Если нам нужен резистор сопротивлением 10 кОм, мы можем соединить два резистора сопротивлением 5 кОм последовательно.
+
+
+
+          Потенциометр:
+
+          Это регулируемый резистор. Он имеет три контакта: два из них подключены к цепи постоянного сопротивления, а третий — к регулируемому ползунку. Они работают путем изменения тока или напряжения, подаваемого на электрическое устройство. Чем выше сопротивление, тем ниже напряжение или ток. По этому принципу работают голосовые потенциометры в колонках, радиоприемниках и т. д. Потенциометр также можно использовать для регулировки яркости, например, диодов или лампочек.</p>
+        <img src="image4.jpg" alt="new-image" />
+      </div>
+      <!-- Новый добавленный контент -->
+      <div class="content-item">
+        <h2></h2>
+        <p class="polish">Tabela 12.1. Rozpoznawanie wielkości rezystancji opornika</p>
+        <h3></h3>
+        <p class="russian">Таблица 12.1. Определение значения сопротивления резистора</p>
+        <img src="image5.jpg" alt="new-image" />
+      </div>
+         <!-- Новый добавленный контент -->
+    <div class="content-item">
+      <h2></h2>
+      <p class="polish">
+
+        Kondensator, czyli element pojemnościowy obwodu elektrycznego, jest zbudowany z dwóch przewodników (okładzin), rozdzielonych warstwą dielektryka. Doprowadzenie napięcia do okła- dzin kondensatora powoduje zgromadzenie się na nich ładunku elektrycznego. Kondensatory można podzielić zależnie od ich przeznaczenia (m.in. przeciwzakłóceniowe, blokujące, sprzę- gające) i zastosowanego dielektryka (m.in. mikowe, ceramiczne, elektrolityczne, powietrzne). Symbole kondensatora stosowane na schemacie przedstawiono na rys. 12.5a i 12.6a. Ze względu na wymagania dotyczące polaryzacji napięcia kondensatory elektrolityczne mają sym- bol graficzny jak na rys. 12.6a. Parametrem kondensatora jest pojemność (oznaczana literą C), którą wyraża się w faradach (F), np. 100 µF.</p>
+      <h3></h3>
+      <p class="russian">
+
+        Конденсатор, т. е. емкостный элемент электрической цепи, состоит из двух проводников (обкладок), разделенных диэлектрическим слоем. Подача напряжения на обкладки конденсатора приводит к накоплению на них электрического заряда. Конденсаторы можно разделить в зависимости от их назначения (например, помехоподавляющие, блокирующие, связывающие) и используемого диэлектрика (например, слюдяные, керамические, электролитические, воздушные). Обозначения конденсаторов, используемые на схеме, показаны на рисунках 12.5а и 12.6а. В связи с требованиями к поляризации напряжения электролитические конденсаторы имеют графическое обозначение, как на рис. 12.6а. Параметром конденсатора является емкость (обозначается буквой С), которая выражается в фарадах (Ф), например 100 мкФ.</p>
+      <img src="image6.jpg" alt="new-image" />
+      <img src="image7.jpg" alt="new-image" />
+    </div>
+    <!-- Новый добавленный контент -->
+  <div class="content-item">
+    <h2>Новый 22222222222заголовок для первой вкладки</h2>
+    <p class="polish">Новый текст на польском</p>
+    <h3>Новый русский заголовок</h3>
+    <p class="russian">Новый текст на русском языке</p>
+    <img src="path/to/new-image.jpg" alt="new-image" />
+  </div>
+    </div>
+ 
+  </div>
+ 
+
+    <div id="tab3" class="tab-content">
+      <!-- Добавляйте контент для третьей вкладки здесь -->
+      <div class="content-item">
+        <h2>
+          Kwalifikacja INF.03 Tworzenie i administrowanie stronami i
+          aplikacijami internetowymi oraz bazami danych
+        </h2>
+        <p class="polish">Tekst po polsku</p>
+        <h3>Russian Translation</h3>
+        <p class="russian">Текст на русском языке</p>
+        <img src="path/to/image3.jpg" alt="image3" />
+      </div>
+      <!-- Новый добавленный контент -->
+      <div class="content-item">
+        <h2>Новый заголовок для первой вкладки</h2>
+        <p class="polish">Новый текст на польском</p>
+        <h3>Новый русский заголовок</h3>
+        <p class="russian">Новый текст на русском языке</p>
+        <img src="path/to/new-image.jpg" alt="new-image" />
+      </div>
+      
+    </div>
+
+<div id="tab5" class="tab-content">
+  <!-- Основной контент пятой вкладки -->
+  <div class="content-item">
+      <h2>Modern JavaScript for the Impatient</h2>
+      <p>В этой вкладке вы найдете книгу "Modern JavaScript for the Impatient".</p>
+      <embed id="jsBook" src="modern-javascript-for-the-impatient_horstmann_2020-343p.pdf" type="application/pdf" width="100%" height="600px" />
+  </div>
+
+  <!-- Заметки -->
+  <div class="notes-section">
+      <h2>Заметки</h2>
+      <div id="jsNotes" class="editable" contenteditable="true" placeholder="Введите ваши заметки здесь..." oninput="saveJSNotes()"></div>
+      <div class="note-buttons">
+        <button onclick="saveNotes()">Сохранить заметки</button>
+          <button onclick="clearJSNotes()">Очистить заметки</button>
+          <input type="color" id="colorPicker" value="#ffff00">
+          <button onclick="highlightText()">Выделить текст</button>
+      </div>
+  </div>
+</div>
+    <div id="tab4" class="tab-content">
+      <!-- Основной контент четвертой вкладки -->
+      <div class="content-item">
+          <h2>JavaScript. Подробное руководство</h2>
+          <p>В этой вкладке вы найдете подробное руководство по JavaScript.</p>
+          <embed src="JavaScript. Подробное руководство (2012,Дэвид Флэнаган).pdf" type="application/pdf" width="100%" height="600px" />
+          
+      </div>
+      
+       
+        <!-- Заметки -->
+        <div class="notes-section">
+          <h2>Заметки</h2>
+          <div id="notes" class="editable" contenteditable="true" placeholder="Введите ваши заметки здесь..."></div>
+          <div class="note-buttons">
+              <button onclick="saveNotes()">Сохранить заметки</button>
+              <button onclick="clearNotes()">Очистить заметки</button>
+              <input type="color" id="colorPicker" value="#ffff00">
+              <button onclick="highlightText()">Выделить текст</button>
+              
+          </div>
+          
+      </div>
+    <script src="my.js"></script>
+  </body>
+</html>
